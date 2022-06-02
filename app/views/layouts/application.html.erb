@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FormularioIncrustadoRuby</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <script 
+    src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js" 
+    kr-public-key="51447378:testpublickey_3SNSOCewrXOZNL2oNYoixUO4q9RaBwClYyCIEofTLGs2g" 
+    kr-post-url-success="paid.html">
+   </script>
+ 
+    <link rel="stylesheet" 
+    href="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/classic-reset.css">
+   <script 
+    src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/classic.js">
+   </script> 
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
